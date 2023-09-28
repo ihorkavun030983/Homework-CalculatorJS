@@ -1,10 +1,22 @@
-let userName = prompt('Яку дію ти хочеш зробити?');
+const selectAction = prompt('Введіть add, sub, mult or div');
+const firstNumber = +prompt('Введіть перше число');
+const lastNumber = +prompt('Введіть друге число');
 
-var a = prompt('Введіть перше число', ' ');
-var b = prompt('Введіть друге число', ' ');
+console.log(firstNumber !== NaN);
+console.log(lastNumber !== NaN);
 
-console.log(Number(a) + Number(b));
-console.log(Number(a) - Number(b));
-console.log(Number(a) * Number(b));
-console.log(Number(a) / Number(b));
+
+if (selectAction === 'add')
+{
+    alert(firstNumber + lastNumber, typeof NaN);
     
+} else if(selectAction === 'sub')
+{
+    alert(firstNumber - lastNumber);
+} else if(selectAction === 'mult')
+{
+    alert(firstNumber * lastNumber);
+} else if(selectAction === 'div')
+{
+    alert(firstNumber / lastNumber);
+}
